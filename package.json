@@ -1,18 +1,22 @@
 {
   "name": "odas0r-portfolio",
   "scripts": {
-    "dev": "npm-run-all --parallel server tailwind",
-    "server": "browser-sync . src/ --no-notify --no-ui --ignore '*formatting*' -sw",
-    "tailwind": "tailwindcss -i ./src/main.css -o ./dist/output.css --watch"
+    "dev": "npm-run-all --parallel server postcss:watch",
+    "server": "browser-sync . src/ --no-notify --no-ui --ignore '**formatting**' -sw",
+    "build": "npm-run-all build:clear postcss:build build:src",
+    "build:clear": "rm -r dist",
+    "build:src": "cp -r src/* dist/",
+    "postcss:build": "NODE_ENV=production postcss src/**/*.css --base src --dir dist/dist",
+    "postcss:watch": "postcss src/**/*.css --base src --dir dist --watch"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.2",
     "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.16",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.0.15"
-  },
-  "dependencies": {
-    "@tailwindcss/typography": "^0.5.0"
   }
 }
