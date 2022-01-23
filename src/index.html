@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="/dist/output.css" />
+
+    <title>odas0r</title>
+  </head>
+  <body
+    class="
+      font-body font-normal
+      max-w-4xl
+      mx-auto
+      px-4
+      selection:bg-black selection:text-white
+    "
+  >
+    <!-- Navbar  -->
+    <nav
+      class="
+        w-full
+        h-[80px]
+        flex
+        justify-center
+        items-center
+        gap-1
+        text-sm
+        bg-white
+        z-10
+        fixed
+        top-0
+        left-0
+        sm:relative sm:gap-5
+      "
+    >
+      <a href="#home" class="flex p-2 group">
+        <span class="font-semibold opacity-0 group-hover:opacity-100">[</span>
+        Home
+        <span class="font-semibold opacity-0 group-hover:opacity-100">]</span>
+      </a>
+      <a href="#keywords" class="flex p-2 group">
+        <span class="font-semibold opacity-0 group-hover:opacity-100">[</span>
+        Keywords
+        <span class="font-semibold opacity-0 group-hover:opacity-100">]</span>
+      </a>
+      <a href="#projects" class="flex p-2 group">
+        <span class="font-semibold opacity-0 group-hover:opacity-100">[</span>
+        Projects
+        <span class="font-semibold opacity-0 group-hover:opacity-100">]</span>
+      </a>
+      <a href="#career" class="flex p-2 group">
+        <span class="font-semibold opacity-0 group-hover:opacity-100">[</span>
+        Career
+        <span class="font-semibold opacity-0 group-hover:opacity-100">]</span>
+      </a>
+    </nav>
+
+    <!-- ============= -->
+    <!-- About Section -->
+    <!-- ============= -->
+    <section id="home" class="pt-28 sm:pt-16">
+      <div class="flex w-fit">
+        <h1
+          class="
+            text-4xl
+            leading-tight
+            font-semibold
+            w-full
+            md:text-5xl md:leading-tight
+          "
+        >
+          A Software Developer
+          <p>
+            that loves
+            <span
+              class="
+                before:block
+                before:absolute
+                before:-inset-1
+                before:-skew-y-3
+                before:bg-black
+                relative
+                inline-block
+              "
+            >
+              <span class="relative text-white">UNIX</span>
+            </span>
+          </p>
+          <p>and creating tools.</p>
+        </h1>
+        <div
+          class="hidden sm:block sm:w-[260px] sm:-ml-14 sm:-mt-9 md:w-[350px]"
+        >
+          <img class="object-fit" src="./assets/happy.png" />
+        </div>
+      </div>
+
+      <p class="mt-6 prose">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren,
+      </p>
+
+      <p class="mt-10 prose">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren,
+      </p>
+
+      <div class="flex gap-1 items-center mt-14">
+        <!-- Github Icon -->
+        <a
+          href="https://github.com/Odas0R"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex text-lg font-semibold p-1 group"
+        >
+          <span class="opacity-0 group-hover:opacity-100">[</span>
+          <img src="./assets/github.svg" alt="Github icon" />
+          <span class="opacity-0 group-hover:opacity-100">]</span>
+        </a>
+
+        <!-- Twitter Icon -->
+        <a
+          href="https://twitter.com/odas0r"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex text-lg font-semibold p-1 group"
+        >
+          <span class="opacity-0 group-hover:opacity-100">[</span>
+          <img src="./assets/twitter.svg" alt="Twitter icon" />
+          <span class="opacity-0 group-hover:opacity-100">]</span>
+        </a>
+
+        <!-- LinkedIn Icon -->
+        <a
+          href="https://www.linkedin.com/in/guilherme-rosado-72752a22b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex text-lg font-semibold p-1 group"
+        >
+          <span class="opacity-0 group-hover:opacity-100">[</span>
+          <img src="./assets/linkedin.svg" alt="LinkedIn icon" />
+          <span class="opacity-0 group-hover:opacity-100">]</span>
+        </a>
+
+        <a
+          href="mailto:guilherme.odas0r?subject=I'dlike to hire you!"
+          class="
+            flex
+            justify-between
+            items-center
+            bg-gray-100
+            px-3
+            py-2
+            rounded-full
+            w-fit
+            hover:bg-gray-200
+            active:bg-gray-300
+            ml-2
+          "
+        >
+          <img class="mr-3" src="./assets/email.svg" alt="Send email icon" />
+          <span class="text-sm">Email Me</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======== -->
+    <!-- Keywords -->
+    <!-- ======== -->
+    <section id="keywords" class="pt-16">
+      <h2 class="text-xl font-medium">
+        <span
+          class="
+            before:block
+            before:absolute
+            before:-inset-1
+            before:-skew-y-3
+            before:bg-black
+            relative
+            inline-block
+          "
+        >
+          <span class="relative text-white">[Keywords]</span>
+        </span>
+      </h2>
+
+      <div class="mt-12">
+        <div class="block sm:flex gap-2">
+          <span class="text-cyan-500">~/keywords</span>
+          <span>$</span>
+          <span class="text-gray-900"> keywords show --author=odas0r </span>
+          <span class="text-gray-900 flex">
+            --relevant
+            <div
+              class="w-[9px] h-[20px] mt-[0.5px] bg-black animate-pulse ml-2"
+            />
+          </span>
+        </div>
+      </div>
+      <!-- command -->
+
+      <div class="mt-12 font-semibold prose text-black">
+        <span>[docker]</span>
+        <span>[docker-compose]</span>
+        <span>[css]</span>
+        <span>[javascript]</span>
+        <span>[typescript]</span>
+        <span>[bash]</span>
+        <span>[git]</span>
+        <span>[tui]</span>
+        <span>[ci/cd]</span>
+        <span>[nextjs]</span>
+        <span>[tailwind]</span>
+        <span>[react]</span>
+        <span>[golang]</span>
+        <span>[sql]</span>
+        <span>[yarn]</span>
+        <span>[webpack]</span>
+        <span>[postgres]</span>
+        <span>[nodejs]</span>
+        <span>[supabase]</span>
+        <span>[figma]</span>
+        <span>[curl]</span>
+        <span>[linux]</span>
+        <span>[networking]</span>
+        <span>[tdd]</span>
+        <span>[agile]</span>
+        <span>[rest]</span>
+        <span>[graphql]</span>
+        <span>[jest]</span>
+        <span>[xstate]</span>
+      </div>
+      <!-- tags -->
+
+      <div class="mt-12 text-sm prose">
+        <blockquote>
+          Note: These keywords represent tools, technologies and practices that
+          I use on a daily basis. They should represent what I'm more
+          familiar/comfortable with, even though I might not be an expert in
+          most of them.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- =============== -->
+    <!-- Project Section -->
+    <!-- =============== -->
+    <section id="projects" class="pt-16">
+      <h2 class="text-xl font-medium">
+        <span
+          class="
+            before:block
+            before:absolute
+            before:-inset-1
+            before:-skew-y-3
+            before:bg-black
+            relative
+            inline-block
+          "
+        >
+          <span class="relative text-white">[Projects]</span>
+        </span>
+      </h2>
+
+      <div class="mt-12">
+        <div class="block sm:flex gap-2">
+          <span class="text-cyan-500">~/projects</span>
+          <span>$</span>
+          <span class="text-gray-900"> projects show --author=odas0r </span>
+          <span class="text-gray-900 flex">
+            --relevant
+            <div
+              class="w-[9px] h-[20px] mt-[0.5px] bg-black animate-pulse ml-2"
+            />
+          </span>
+        </div>
+      </div>
+      <div class="mt-12 grid grid-cols-1 gap-4">
+        <a
+          class="flex py-6 px-2 group"
+          href="https://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="prose">
+            <h4 class="text-lg font-medium flex">
+              <span class="hidden group-hover:inline-block">[</span>
+              <div class="inline-flex gap-3">
+                <img class="m-0 p-0 mt-1" src="./assets/github.svg" alt="" />
+                eletrical-field
+              </div>
+              <span class="hidden group-hover:inline-block">]</span>
+            </h4>
+            <p class="text-sm text-gray-600 mt-3">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+            <div class="text-sm mt-5 font-semibold text-black">
+              <span>[webgl]</span>
+              <span>[js]</span>
+            </div>
+          </div>
+        </a>
+        <!-- eletrical field simulation -->
+
+        <a
+          class="flex py-6 px-2 group"
+          href="https://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="prose">
+            <h4 class="text-lg font-medium flex">
+              <span class="hidden group-hover:inline-block">[</span>
+              <div class="inline-flex gap-3">
+                <img class="m-0 p-0 mt-1" src="./assets/github.svg" alt="" />
+                habit
+              </div>
+              <span class="hidden group-hover:inline-block">]</span>
+            </h4>
+            <p class="text-sm text-gray-600 mt-3">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+            <div class="text-sm mt-5 font-semibold text-black">
+              <span>[bash]</span>
+              <span>[cli]</span>
+              <span>[productivity]</span>
+            </div>
+          </div>
+        </a>
+        <!-- habit -->
+
+        <a
+          class="flex py-6 px-2 group"
+          href="https://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="prose">
+            <h4 class="text-lg font-medium flex">
+              <span class="hidden group-hover:inline-block">[</span>
+              <div class="inline-flex gap-3">
+                <img class="m-0 p-0 mt-1" src="./assets/github.svg" alt="" />
+                zet
+              </div>
+              <span class="hidden group-hover:inline-block">]</span>
+            </h4>
+            <p class="text-sm text-gray-600 mt-3">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+            <div class="text-sm mt-5 font-semibold text-black">
+              <span>[bash]</span>
+              <span>[cli]</span>
+              <span>[notes]</span>
+              <span>[productivity]</span>
+            </div>
+          </div>
+        </a>
+        <!-- zet -->
+
+        <a
+          class="flex py-6 px-2 group"
+          href="https://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="prose">
+            <h4 class="text-lg font-medium flex">
+              <span class="hidden group-hover:inline-block">[</span>
+              <div class="inline-flex gap-3 w-fit">
+                <img class="m-0 p-0 mt-1" src="./assets/github.svg" alt="" />
+                <div class="flex text-clip">supa-compose</div>
+              </div>
+              <span class="hidden group-hover:inline-block">]</span>
+            </h4>
+            <p class="text-sm text-gray-600 mt-3">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+            <div class="text-sm mt-5 font-semibold text-black">
+              <span>[bash]</span>
+              <span>[cli]</span>
+              <span>[notes]</span>
+              <span>[productivity]</span>
+            </div>
+          </div>
+        </a>
+        <!-- supa-compose -->
+
+        <a
+          class="flex py-6 px-2 group"
+          href="https://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="prose">
+            <h4 class="text-lg font-medium flex">
+              <span class="hidden group-hover:inline-block">[</span>
+              <div class="inline-flex gap-3">
+                <img class="m-0 p-0 mt-1" src="./assets/github.svg" alt="" />
+                thatdesign
+              </div>
+              <span class="hidden group-hover:inline-block">]</span>
+            </h4>
+            <p class="text-sm text-gray-600 mt-3">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+            <div class="text-sm mt-5 font-semibold text-black">
+              <span>[typescript]</span>
+              <span>[react]</span>
+              <span>[nextjs]</span>
+              <span>[postgresql]</span>
+              <span>[supabase]</span>
+            </div>
+          </div>
+        </a>
+        <!-- thatdesign -->
+
+        <a
+          class="flex py-6 px-2 group"
+          href="https://www.github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="prose">
+            <h4 class="text-lg font-medium flex">
+              <span class="hidden group-hover:inline-block">[</span>
+              <div class="inline-flex gap-3">
+                <img class="m-0 p-0 mt-1" src="./assets/github.svg" alt="" />
+                paleontology
+              </div>
+              <span class="hidden group-hover:inline-block">]</span>
+            </h4>
+            <p class="text-sm text-gray-600 mt-3">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et
+            </p>
+            <div class="text-sm mt-5 font-semibold text-black">
+              <span>[typescript]</span>
+              <span>[react]</span>
+              <span>[nextjs]</span>
+              <span>[postgresql]</span>
+              <span>[supabase]</span>
+            </div>
+          </div>
+        </a>
+        <!-- paleontology -->
+      </div>
+    </section>
+
+    <!-- ====== -->
+    <!-- Career -->
+    <!-- ====== -->
+    <section id="career" class="pt-16 pb-12">
+      <h2 class="text-xl font-medium">
+        <span
+          class="
+            before:block
+            before:absolute
+            before:-inset-1
+            before:-skew-y-3
+            before:bg-black
+            relative
+            inline-block
+          "
+        >
+          <span class="relative text-white">[Career]</span>
+        </span>
+      </h2>
+
+      <div class="mt-12">
+        <div class="block sm:flex gap-2">
+          <span class="text-cyan-500">~/career</span>
+          <span>$</span>
+          <span class="text-gray-900">career show</span>
+          <span class="text-gray-900">--author=odas0r </span>
+          <span class="text-gray-900 flex">
+            --orderBy year
+            <div
+              class="w-[9px] h-[20px] mt-[0.5px] bg-black animate-pulse ml-2"
+            />
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 gap-4">
+        <div class="prose">
+          <h6 class="font-semibold">{2021..Now}</h6>
+          <ul>
+            <li>
+              <h4 class="font-bold text-sm">Resumed College</h4>
+              <p class="text-sm text-gray-800 mt-3">
+                After that crazy year that I took from my studies, I resumed
+                college. Currently I'm doing freelancing and working full time
+                a-side as I finish my degree (I'm doing 1-2 classes per semester
+                while working).
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- Now -->
+
+        <div class="prose">
+          <h6 class="font-semibold">{2020..2021}</h6>
+          <ul>
+            <li>
+              <h4 class="font-bold text-sm">Took a year off college</h4>
+              <p class="text-sm text-gray-800 mt-3">
+                After that crazy year that I took from my studies, I resumed
+                college. Currently I'm doing freelancing and working full time
+                a-side as I finish my degree.
+              </p>
+            </li>
+            <li>
+              <h4 class="font-bold text-sm">
+                Became an Autodidact on learning Software
+              </h4>
+              <p class="text-sm text-gray-800 mt-3">
+                Started learning on my own <code>Javascript</code>,
+                <code>React</code>, <code>PostgreSQL</code>, etc;
+              </p>
+            </li>
+            <li>
+              <h4 class="font-bold text-sm">
+                Worked on a start-up idea, <em>AoLado</em>
+              </h4>
+              <p class="text-sm text-gray-800 mt-3">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam
+              </p>
+            </li>
+            <li>
+              <h4 class="font-bold text-sm text-black">
+                Applied to a FCT Nova Entrepreneur Contest (won 2nd place)
+              </h4>
+              <p class="text-sm text-gray-800 mt-3">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam
+              </p>
+            </li>
+            <li>
+              <h4 class="font-bold text-sm text-black">
+                Created a Web Design brand, <em>thatdesign</em>
+              </h4>
+              <p class="text-sm text-gray-800 mt-3">
+                Started doing <b>freelancing</b>, and got two clients;
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- two year gap year -->
+
+        <div class="prose">
+          <h6 class="font-semibold">{2018..2023}</h6>
+          <ul class="">
+            <li>
+              <h4 class="font-bold text-sm text-black">
+                Computer Science Degree in FCT Nova, Caparica
+              </h4>
+              <p class="text-sm text-gray-800 mt-3">
+                After finishing highscool I applied to several colleges that had
+                the Computer Science degree, beeing accepted on FCT (Faculdade
+                Ciencias e Tecnologias) da Nova, Caparica.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- college -->
+      </div>
+      <!-- grid -->
+    </section>
+  </body>
+</html>
